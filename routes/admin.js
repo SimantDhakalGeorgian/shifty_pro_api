@@ -11,7 +11,7 @@ const router = express.Router();
 const { isAuthenticated } = require('../middleware/auth');
 // Clock in route with PIN and _id verification
 const mongoose = require('mongoose');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const { ObjectId } = require('mongodb');  // Import ObjectId
 
